@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Neighbourhood map</title>
+    <link rel="stylesheet" href="css/main.css">   
+  </head>
+
+  <body>
+    <div>
+      <div id="map"></div>
+      
+      <div id="search">
+      
+          <input type="text" id="search-box" data-bind= "value: currentFilter, valueUpdate: 'keyup'" placeholder="Search for..." required>
+          
+          <div id="places">
+            <ul id="places-list" data-bind="foreach: filterItem"><li data-bind= "text: title, click: $parent.showMarker"> </li></ul>
+          	
+          </div>
+  	      <div class="foursq-container">
+            <h3 id="foursquare"></h3>
+            <ul id="foursq-detail"></ul>
+          </div>
+  	  </div>
+      <div class="weather-container">
+          <h3 id="weather">Weather</h3>
+          <ul id="weather-detail"></ul>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/knockout-3.4.1.js"></script>
+    <script src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?&v=3&callback=initMap" onerror="googleerror()">
+    </script>
+   
+  </body>
+</html>
