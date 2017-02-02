@@ -1,0 +1,63 @@
+
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+       
+    bottom: 0px;
+    height: 100%;
+    width: 75%;
+    position: absolute;
+    right: 0px;
+}
+
+html, body {
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#search {
+  
+    height: 100%;
+    position: absolute;
+    background: #330000;
+    width: 25%;
+    color: #fff;
+    overflow: scroll;
+    
+  
+}
+
+#search-box {
+
+    width: 99%;
+    height: 5%;
+    font-size: 1em;
+
+}
+
+#button {
+   
+    width: 25%;
+}
+
+#foursq-detail {
+    list-style-type: none;
+    font-size: 15px;
+}
+
+#places-list {
+    font-size: 17px;
+}
+
+
+.weather-container {
+    position: absolute;
+    z-index: 5;
+    padding: 10px;
+    
+    color: #fff;
+    top: 0;
+    right: 0;
+}
